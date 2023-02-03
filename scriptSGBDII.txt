@@ -1,0 +1,283 @@
+﻿//Conexão para o Azure: mongodb+srv://arcanjosilva:basededados2022@cluster0.nbbey2t.mongodb.net/projeto
+
+//Coleção grupos
+
+db.grupos.insertMany([
+{"Grupo_id":"A","DESC":"Conta com 4"},
+{"Grupo_id":"B","DESC":"Conta com 4"},
+{"Grupo_id":"C","DESC":"Conta com 4"},
+{"Grupo_id":"D","DESC":"Conta com 4"},
+{"Grupo_id":"E","DESC":"Conta com 4"},
+{"Grupo_id":"F","DESC":"Conta com 4"},
+{"Grupo_id":"G","DESC":"Conta com 4"},
+{"Grupo_id":"H","DESC":"Conta com 4"}
+])
+
+//Coleção treinador
+
+db.treinador.insertMany([
+{"Treinador_id":24,"Nome":"Fernando Santos","Idade":52,"Nacionalidade":"Inglesa"},
+{"Treinador_id":25,"Nome":"Otto Addo","Idade":52,"Nacionalidade":"Inglesa"},
+{"Treinador_id":26,"Nome":"Diego Alonso","Idade":52,"Nacionalidade":"Inglesa"},
+{"Treinador_id":27,"Nome":"Paulo Bento","Idade":52,"Nacionalidade":"Inglesa"},
+{"Treinador_id":28,"Nome":"Louis van Gaal","Idade":52,"Nacionalidade":"Inglesa"},
+{"Treinador_id":29,"Nome":"Aliou Cissé","Idade":52,"Nacionalidade":"Inglesa"},
+{"Treinador_id":30,"Nome":"Gustavo Alfaro","Idade":52,"Nacionalidade":"Inglesa"},
+{"Treinador_id":31,"Nome":"Félix Sánchez","Idade":52,"Nacionalidade":"Inglesa"},
+{"Treinador_id":32,"Nome":"Gareth Southgate","Idade":52,"Nacionalidade":"Inglesa"}
+])
+
+//Coleção selecoes
+
+db.selecoes.insertOne({"Nome": "Inglaterra","Treinador_id":1 ,"Grupo_id":"B"})
+db.selecoes.insertOne({"Nome": "EUA","Treinador_id": 2,"Grupo_id":"B"})
+db.selecoes.insertOne({"Nome": "Irão","Treinador_id":3,"Grupo_id":"B"})
+db.selecoes.insertOne({"Nome": "País de Gales","Treinador_id":4,"Grupo_id":"B"})
+
+//Coleção jogadores
+
+db.jogadores.insertOne({"Nome" : "Diogo Costa", "Seleção" : "Portugal", "Posição" : "Guarda-Redes", "Número" : 22, "Clube" : "Futebol Clube do Porto"})
+db.jogadores.insertOne({"Nome" : "José Sá", "Seleção" : "Portugal", "Posição" : "Guarda-Redes", "Número" : 12, "Clube" : "Wolverhampton Wanderers"})
+db.jogadores.insertOne({"Nome" : "Rui Patrício", "Seleção" : "Portugal", "Posição" : "Guarda-Redes", "Número" : 1, "Clube" : "AS Roma"})
+db.jogadores.insertOne({"Nome" : "Rúben Dias", "Seleção" : "Portugal", "Posição" : "Defesa Central", "Número" : 4, "Clube" : "Manchester City FC"})
+db.jogadores.insertOne({"Nome" : "António Silva", "Seleção" : "Portugal", "Posição" : "Defesa Central", "Número" : 24, "Clube" : "Sport Lisboa e Benfica"})
+db.jogadores.insertOne({"Nome" : "Pepe", "Seleção" : "Portugal", "Posição" : "Defesa Central", "Número" : 3, "Clube" : "Futebol Clube do Porto"})
+db.jogadores.insertOne({"Nome" : "Raphaël Guerreiro", "Seleção" : "Portugal", "Posição" : "Defesa Esquerdo", "Número" : 5, "Clube" : "Borussia Dortmund"})
+db.jogadores.insertOne({"Nome" : "Nuno Mendes", "Seleção" : "Portugal", "Posição" : "Defesa Esquerdo", "Número" : 19, "Clube" : "FC Paris Saint-Germain"})
+db.jogadores.insertOne({"Nome" : "João Cancelo", "Seleção" : "Portugal", "Posição" : "Defesa Direito", "Número" : 20, "Clube" : "Manchester City FC"})
+db.jogadores.insertOne({"Nome" : "Diogo Dalot", "Seleção" : "Portugal", "Posição" : "Defesa Direito", "Número" : 2, "Clube" : "Manchester United FC"})
+db.jogadores.insertOne({"Nome" : "Rúben Neves", "Seleção" : "Portugal", "Posição" : "Médio Defensivo", "Número" : 18, "Clube" : "Wolverhampton Wanderers"})
+db.jogadores.insertOne({"Nome" : "João Palhinha", "Seleção" : "Portugal", "Posição" : "Médio Defensivo", "Número" : 6, "Clube" : "FC Fulham"})
+db.jogadores.insertOne({"Nome" : "William Carvalho", "Seleção" : "Portugal", "Posição" : "Médio Defensivo", "Número" : 14, "Clube" : "Real Bétis"})
+db.jogadores.insertOne({"Nome" : "Danilo Pereira", "Seleção" : "Portugal", "Posição" : "Médio Defensivo", "Número" : 13, "Clube" : "FC Paris Saint-Germain"})
+db.jogadores.insertOne({"Nome" : "Vitinha", "Seleção" : "Portugal", "Posição" : "Médio Centro", "Número" : 16, "Clube" : "FC Paris Saint-Germain"})
+db.jogadores.insertOne({"Nome" : "Matheus Nunes", "Seleção" : "Portugal", "Posição" : "Médio Centro", "Número" : 23, "Clube" : "Wolverhampton Wanderers"})
+db.jogadores.insertOne({"Nome" : "Bernardo Silva", "Seleção" : "Portugal", "Posição" : "Médio Ofensivo", "Número" : 10, "Clube" : "Manchester City FC"})
+db.jogadores.insertOne({"Nome" : "Bruno Fernandes", "Seleção" : "Portugal", "Posição" : "Médio Ofensivo", "Número" : 8, "Clube" : "Manchester United FC"})
+db.jogadores.insertOne({"Nome" : "João Mário", "Seleção" : "Portugal", "Posição" : "Médio Ofensivo", "Número" : 17, "Clube" : "Sport Lisboa e Benfica"})
+db.jogadores.insertOne({"Nome" : "Rafael Leão", "Seleção" : "Portugal", "Posição" : "Extremo Esquerdo", "Número" : 15, "Clube" : "AC Milan"})
+db.jogadores.insertOne({"Nome" : "Ricardo Horta", "Seleção" : "Portugal", "Posição" : "Extremo Esquerdo", "Número" : 21, "Clube" : "Sporting Clube de Braga"})
+db.jogadores.insertOne({"Nome" : "Otávio", "Seleção" : "Portugal", "Posição" : "Extremo Direito", "Número" : 25, "Clube" : "Futebol Clube do Porto"})
+db.jogadores.insertOne({"Nome" : "João Félix", "Seleção" : "Portugal", "Posição" : "Avançado Centro", "Número" : 11, "Clube" : "Atlético de Madrid"})
+db.jogadores.insertOne({"Nome" : "André Silva", "Seleção" : "Portugal", "Posição" : "Ponta de Lança", "Número" : 9, "Clube" : "RB Leipzig"})
+db.jogadores.insertOne({"Nome" : "Gonçalo Ramos", "Seleção" : "Portugal", "Posição" : "Ponta de Lança", "Número" : 26, "Clube" : "Sport Lisboa e Benfica"})
+db.jogadores.insertOne({"Nome" : "Cristiano Ronaldo", "Seleção" : "Portugal", "Posição" : "Ponta de Lança", "Número" : 7, "Clube" : "Sem clube"})
+
+//Coleção titulos_selecao
+db.titulos_selecao.insertOne({"Nome": "Brasil", "titulos_mundiais": 5, "titulos_continentais": 9, "titulos_copaConfederacoes": 4, "titulos_nations": 0})
+db.titulos_selecao.insertOne({"Nome": "Suíça", "titulos_mundiais": 0, "titulos_continentais": 0, "titulos_copaConfederacoes": 0, "titulos_nations": 0})
+db.titulos_selecao.insertOne({"Nome": "Camarões", "titulos_mundiais": 0, "titulos_continentais": 5, "titulos_copaConfederacoes": 0, "titulos_nations": 0})
+db.titulos_selecao.insertOne({"Nome": "Sérvia", "titulos_mundiais": 0, "titulos_continentais": 0, "titulos_copaConfederacoes": 0, "titulos_nations": 0})
+db.titulos_selecao.insertOne({"Nome": "Portugal", "titulos_mundiais": 0, "titulos_continentais": 1, "titulos_copaConfederacoes": 0, "titulos_nations": 1})
+
+//Coleção melhor_campanha
+
+db.melhor_campanha.insertOne({"Seleção": "Holanda", "participacoes": 11, "melhor_colocacao": "Final" ,"ano": 2010})
+db.melhor_campanha.insertOne({"Seleção": "Senegal", "participacoes": 3, "melhor_colocacao": "Quartos" ,"ano": 2002})
+db.melhor_campanha.insertOne({"Seleção": "Equador", "participacoes": 4, "melhor_colocacao": "Oitavos" ,"ano": 2006})
+db.melhor_campanha.insertOne({"Seleção": "Catar", "participacoes": 1, "melhor_colocacao": "Fase de Grupos" ,"ano": 2022})
+
+//Coleção maioresJogadores_selecao
+
+db.maioresJogadores_selecao.insertOne({"Seleção": "Brasil", "mais_golos": "Pelé(77)", "mais_jogos": "Cafu(143)"})
+db.maioresJogadores_selecao.insertOne({"Seleção": "Suíça", "mais_golos": "Alex Frei(42)", "mais_jogos": "Heinz Hermann(118)"})
+db.maioresJogadores_selecao.insertOne({"Seleção": "Camarões", "mais_golos": "Samuel Eto'o(56)", "mais_jogos": "Rigobert Song(115)"})
+db.maioresJogadores_selecao.insertOne({"Seleção": "Sérvia", "mais_golos": "Aleksandar Mitrović(52)", "mais_jogos": "Branislav Ivanovic(104)"})
+db.maioresJogadores_selecao.insertOne({"Seleção": "Portugal", "mais_golos": "Cristiano Ronaldo(118)", "mais_jogos": "Cristiano Ronaldo(196)"})
+
+//Esquemas de Validação
+
+//Coleção grupos
+
+db.runCommand({
+collMod: "grupos",
+validator:{ $jsonSchema:{
+bsonType: "object",
+required:[ "Grupo_id","DESC"],
+properties:{
+"Grupo_id":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"DESC":{
+bsonType:"string",
+description: "must be a string and is required"
+}
+}
+}},
+validationLevel:"moderate"
+})
+
+//Coleção titulos_selecao
+
+db.runCommand({
+collMod: "titulos_selecao",
+validator:{ $jsonSchema:{
+bsonType: "object",
+required:[ "Nome","
+titulos_mundiais","titulos_continentais","titulos_copaConfederacoes","titulos_nations"],
+properties: {
+"Nome":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"titulos_mundiais":{
+bsonType:"int",
+description: "must be a string and is required"
+},
+"titulos_continentais":{
+bsonType:"int",
+description: "must be a string and is required"
+}"titulos_copaConfederacoes":{
+bsonType:"int",
+description: "must be a string and is required"
+},
+"titulos_nations":{
+bsonType:"int",
+description: "must be a string and is required"
+},
+}
+}},
+validationLevel:"moderate"
+})
+
+//Coleção treinador
+
+db.runCommand({
+collMod: "treinador",
+validator:{ $jsonSchema:{
+bsonType: "object",
+required:[ "Treinador_id","Nome","Idade","Nacionalidade"],
+properties: {
+"Treinador_id":{
+bsonType:"int",
+description: "must be a string and is required"
+},
+"Nome":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"Idade":{
+bsonType:"int",
+description: "must be a string and is required"
+},
+"Nacionalidade":{
+bsonType:"string",
+description: "must be a string and is required"
+}
+}
+}},
+validationLevel:"moderate"
+})
+
+//Coleção selecoes
+
+db.runCommand({
+collMod: "selecoes",
+validator:{ $jsonSchema:{
+bsonType: "object",
+required:[ "Nome","Treinador_id","Grupo_id"],
+properties: {
+"Nome":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"Treinador_id":{
+bsonType:"int",
+description: "must be a string and is required"
+},
+"Grupo_id":{
+bsonType:"string",
+description: "must be a string and is required"
+}
+}
+}},
+validationLevel:"moderate"
+})
+
+//Coleção melhor_campanha
+
+db.runCommand({
+collMod: "melhor_campanha",
+validator:{ $jsonSchema:{
+bsonType: "object",
+required:[ "Seleção","participacoes","melhor_colocacao","ano"],
+properties: {
+"Seleção":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"participacoes":{
+bsonType:"int",
+description: "must be a string and is required"
+},
+"melhor_colocacao":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"ano":{
+bsonType:"int",
+description: "must be a string and is required"
+}
+}
+}},
+validationLevel:"moderate"
+})
+
+//Coleção maioresJogadores_selecao
+
+db.runCommand({
+collMod: "maioresJogadores_selecao",
+validator:{ $jsonSchema:{
+bsonType: "object",
+required:[ "Seleção","mais_golos","mais_jogos"],
+properties: {
+"Seleção":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"mais_golos":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"mais_jogos":{
+bsonType:"string",
+description: "must be a string and is required"
+}
+}
+}},
+validationLevel:"moderate"
+})
+
+//Coleção jogadores
+
+db.runCommand({
+	collMod: "jogadores",
+validator:{ $jsonSchema:{
+bsonType: "object",
+required:[ "Nome","Seleção","Posição","Número","Clube"],
+properties: {
+"Nome":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"Seleção":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"Posição":{
+bsonType:"string",
+description: "must be a string and is required"
+},
+"Número":{
+bsonType:"int",
+description: "must be a string and is required"
+},
+"Clube":{
+bsonType:"string",
+description: "must be a string and is required"
+}
+}
+}},
+validationLevel:"moderate"
+})
